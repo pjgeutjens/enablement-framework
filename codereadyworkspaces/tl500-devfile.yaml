@@ -13,7 +13,7 @@ components:
   - type: cheEditor
     alias: theia-editor
     id: eclipse/che-theia/latest
-    memoryLimit: 2Gi
+    memoryLimit: 1Gi
   - alias: exec-plugin
     type: chePlugin
     id: eclipse/che-machine-exec-plugin/latest
@@ -29,7 +29,7 @@ components:
   - type: dockerimage
     alias: stack-tl500
     image: quay.io/rht-labs/stack-tl500:3.0.15
-    memoryLimit: 2Gi
+    memoryLimit: 1Gi
     mountSources: true
     args: ['/bin/sh', '-c', 'sleep infinity']
     volumes:
